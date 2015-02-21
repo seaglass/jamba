@@ -117,7 +117,7 @@ end
 
 -- Debug message.
 function AJM:DebugMessage( ... )
-    AJM:Print( ... )
+    --AJM:Print( ... )
 end
 
 -------------------------------------------------------------------------------------------------------------
@@ -281,14 +281,16 @@ local function CommandAll( moduleName, commandName, ... )
 	-- Send command to all in group/raid.
 	--if not UnitInBattleground( "player" ) then
 	if UnitInParty( "player" ) == true then --or UnitInRaid( "player" ) then 
-	 AJM:DebugMessage( "Sending command to group." )
+		if not UnitInBattleground( "player" ) then
+		AJM:DebugMessage( "Sending command to group." )
 			AJM:SendCommMessage( 
 			AJM.COMMAND_PREFIX,
 			message,
 			AJM.COMMUNICATION_GROUP,
 			nil,
 			AJM.COMMUNICATION_PRIORITY_ALERT
-		)		
+			)
+		end	
 	end
 	-- If player not in a party or raid, then send to player. Pointless as does it under anyway, x2 everything!
 --	if GetNumSubgroupMembers() == 0 and GetNumGroupMembers() == 0 then
@@ -309,10 +311,10 @@ local function CommandAll( moduleName, commandName, ... )
 			if not UnitInParty( characterName ) then
 				canSend = true
 			end
-			-- If in a battleground then send a whisper as the party/raid would have not been sent.
---			if UnitInBattleground( characterName ) == true then
---				canSend = true
---			end
+			--If in a battleground then send a whisper as the party/raid would have not been sent.
+			if UnitInBattleground( characterName ) then
+				canSend = true
+			end
 			if canSend == true then
                 AJM:DebugMessage( "Sending command to others not in party/raid." )
 				AJM:SendCommMessage( 
