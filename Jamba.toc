@@ -1,0 +1,17 @@
+## Interface: 60000
+## Title: Jamba
+## Notes: Jamba
+## Author: Ebony, Former Author: Jafula
+## Version: 6.0.3.9
+## X-Category: Interface Enhancements
+## SavedVariables: JambaCoreProfileDB, JambaCommunicationsProfileDB, JambaTeamProfileDB, JambaTagProfileDB, JambaMessageProfileDB
+JambaEmbeds.xml
+JambaUtilities.lua
+Locales\Locales.xml
+JambaHelperSettings.lua
+JambaCore.lua
+JambaCommunications.lua
+JambaModule.lua
+JambaTeam.lua
+JambaTag.lua
+JambaMessage.lua

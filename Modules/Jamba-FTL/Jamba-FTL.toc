@@ -1,0 +1,12 @@
+## Interface: 60000
+## Title: Jamba-FTL
+## Notes: Jamba-FTL
+## Author: Olipcs, Ebony, Former Author: Jafula
+## Version: 6.0.3.9
+## X-Category: Interface Enhancements
+## X-Child-Of: Jamba
+## Dependencies: Jamba
+## SavedVariables: JambaFTLProfileDB
+## LoadOnDemand: 1
+Locales\Locales.xml
+JambaFTL.lua
