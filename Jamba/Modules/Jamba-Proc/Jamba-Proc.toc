@@ -1,0 +1,14 @@
+## Interface: 60000
+## Title: Jamba-Proc
+## Notes: Jamba-Proc
+## Author: Ebony, Former Author: Jafula
+## Version: 6.0.3.9
+## X-Category: Interface Enhancements
+## X-Child-Of: Jamba
+## Dependencies: Jamba
+## SavedVariables: JambaProcProfileDBv2
+## LoadOnDemand: 1
+Locales\Locales.xml
+JambaProc.lua
+
+

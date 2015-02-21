@@ -1,0 +1,16 @@
+## Interface: 60000
+## Title: Jamba-Quest
+## Notes: Jamba-Quest
+## Author: Ebony, Former Author: Jafula
+## Version: 6.0.3.9
+## X-Category: Interface Enhancements
+## X-Child-Of: Jamba
+## Dependencies: Jamba
+## SavedVariables: JambaQuestProfileDB
+## LoadOnDemand: 1
+Locales\Locales.xml
+JambaQuest.lua
+Overrides.lua
+
+
+

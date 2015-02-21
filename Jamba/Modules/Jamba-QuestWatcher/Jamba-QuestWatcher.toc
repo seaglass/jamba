@@ -1,0 +1,14 @@
+## Interface: 60000
+## Title: Jamba-QuestWatcher
+## Notes: Jamba-QuestWatcher
+## Author: Ebony, Former Author: Jafula
+## Version: 6.0.3.9
+## X-Category: Interface Enhancements
+## X-Child-Of: Jamba
+## Dependencies: Jamba
+## SavedVariables: JambaQuestWatcherProfileDB
+## LoadOnDemand: 1
+Locales\Locales.xml
+JambaQuestWatcher.lua
+
+
